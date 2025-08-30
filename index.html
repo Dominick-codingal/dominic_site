@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dominic Njuguna — Personal Site</title>
+  <meta name="description" content="Personal website for Dominic Njuguna: tutor, adventurer-at-heart, and philosophy enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <div class="id-block">
+        <img src="assets/dominic-avatar.svg" alt="Dominic avatar" class="avatar">
+        <div>
+          <h1>Dominic Njuguna</h1>
+          <p class="subtitle">Online tutor (Grades 5–8) • Tech & learning enthusiast • Based in Kenya</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#adventures">Adventures</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container grid two">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            Hi, I’m Dominic — an online tutor helping Grade 5–8 learners grow their confidence in computing and related subjects.
+            I love creating simple explanations, hands‑on demos, and playful activities that make ideas stick.
+          </p>
+          <p>
+            Beyond the classroom, I’m big on growth: I believe goals and perspectives change over time, because growth requires change.
+            I'm also exploring web projects and practical ways to help students share and showcase their work.
+          </p>
+          <ul class="bullets">
+            <li>Location: Kenya (UTC+03:00)</li>
+            <li>Teaching: Programming basics, Scratch, HTML/CSS/JS, problem‑solving</li>
+            <li>Hobbies: Gaming, coding mini‑projects, planning outdoor adventures</li>
+          </ul>
+        </div>
+        <figure class="card media">
+          <img src="Didi 2.png" alt="Dominic">
+          
+        </figure>
+      </div>
+    </section>
+
+    <section id="teaching" class="section alt">
+      <div class="container">
+        <h2>Teaching Focus</h2>
+        <div class="grid three">
+          <div class="card">
+            <h3>Clear & Simple</h3>
+            <p>I explain complex topics with everyday language, visuals, and short examples.</p>
+          </div>
+          <div class="card">
+            <h3>Hands‑On</h3>
+            <p>Students build things: mini apps, Scratch games, and quick experiments.</p>
+          </div>
+          <div class="card">
+            <h3>Feedback‑First</h3>
+            <p>Regular check‑ins, supportive corrections, and lots of encouragement.</p>
+          </div>
+        </div>
+
+        <div class="card wide">
+          <h3>Recent Class Topics</h3>
+          <ul class="tags">
+            <li>JavaScript basics</li>
+            <li>HTML & CSS</li>
+            <li>Scratch studios</li>
+            <li>Algorithms vs sequences</li>
+            <li>Overfitting (intro)</li>
+            <li>MIT App Inventor quizzes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="adventures" class="section">
+      <div class="container grid two">
+        <div>
+          <h2>Adventure Bucket List</h2>
+          <p>I’m working toward more time in nature and new challenges:</p>
+          <ul class="checklist">
+            <li>Hike, camp, and bungee jump</li>
+            <li>Become a strong swimmer (esp. open water)</li>
+            <li>Explore Mt. Kenya, Turkana, and the Maasai Mara</li>
+            <li>Try skydiving</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Next Steps</h3>
+          <ol>
+            <li>Weekly swim practice to build endurance</li>
+            <li>Plan a weekend hike and camping trip</li>
+            <li>Research safe local bungee spots</li>
+            <li>Budget & schedule for a Mt. Kenya trek</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy" class="section alt">
+      <div class="container grid two">
+        <div>
+          <h2>Philosophy Corner</h2>
+          <p>
+            I’m exploring ethics — blending objectivism and subjectivism.
+            Kantian ethics feels like the strongest base for moral objectivism, balanced with lived experience.
+          </p>
+          <blockquote>
+            “Act in such a way that you treat humanity… always at the same time as an end and never merely as a means.”
+          </blockquote>
+        </div>
+        <div class="card">
+          <h3>Reading & Notes</h3>
+          <ul class="bullets">
+            <li>Kant’s categorical imperative</li>
+            <li>Debates on moral realism</li>
+            <li>Practical ethics in teaching</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container grid two">
+        <div>
+          <h2>Contact</h2>
+          <p>Want to collaborate or say hi? Replace the placeholders below with your details.</p>
+          <ul class="bullets">
+            <li>Email: <a href="mailto:your.email@example.com">dominicodingal@gmail.com</a></li>
+            <li>Social: Dominic Njuguna</li>
+            <li>Location: Kenya</li>
+          </ul>
+        </div>
+        <form class="card" onsubmit="return handleSubmit(event)">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" required>
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" required>
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send</button>
+          <p id="formStatus" class="muted" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dominic Njuguna • Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
